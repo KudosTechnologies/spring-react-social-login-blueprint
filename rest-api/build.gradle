@@ -7,19 +7,19 @@ buildscript {
     }
     dependencies {
         classpath 'org.jsonschema2pojo:jsonschema2pojo-gradle-plugin:1.2.1'
-        classpath "org.openapitools:openapi-generator-gradle-plugin:7.5.0"
+        classpath "org.openapitools:openapi-generator-gradle-plugin:7.6.0"
     }
 }
 plugins {
-    id 'org.springframework.boot' version '3.2.5'
-    id 'io.spring.dependency-management' version '1.1.4'
+    id 'org.springframework.boot' version '3.3.1'
+    id 'io.spring.dependency-management' version '1.1.5'
     id 'java'
     id 'jacoco'
 }
 dependencyManagement {
     imports {
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:2023.0.1"
-        mavenBom "org.springframework.modulith:spring-modulith-bom:1.1.4"
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:2023.0.2"
+        mavenBom "org.springframework.modulith:spring-modulith-bom:1.2.1"
 
     }
 }
@@ -70,17 +70,17 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 
     // Security
-    implementation group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.12.5'
+    implementation group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.12.6'
     implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
     // Runtime
     runtimeOnly 'org.postgresql:postgresql'
-    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.12.5'
-    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.12.5'
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.12.6'
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.12.6'
 
     // Others
-    implementation group: 'io.swagger.core.v3', name: 'swagger-annotations', version: '2.2.21'
-    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.5.0'
+    implementation group: 'io.swagger.core.v3', name: 'swagger-annotations', version: '2.2.22'
+    implementation group: 'org.springdoc', name: 'springdoc-openapi-starter-webmvc-ui', version: '2.6.0'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     implementation group: 'org.mapstruct', name: 'mapstruct', version: '1.5.5.Final'
