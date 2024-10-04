@@ -86,7 +86,7 @@ dependencies {
     implementation group: 'org.mapstruct', name: 'mapstruct', version: '1.5.5.Final'
     annotationProcessor 'org.mapstruct:mapstruct-processor:1.5.5.Final'
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.14.0'
-    implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '7.4'
+    implementation group: 'net.logstash.logback', name: 'logstash-logback-encoder', version: '8.0'
 
     // Test
     testImplementation('org.springframework.boot:spring-boot-starter-test')
